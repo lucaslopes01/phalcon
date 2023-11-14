@@ -23,5 +23,5 @@ RUN set -xe && \
         ${PWD}/cphalcon-${PHALCON_VERSION} \
     && \
     php -m
-
+WORKDIR /var/www/html
 ENV WEB_DOCUMENT_ROOT=/var/www/html/application/public
